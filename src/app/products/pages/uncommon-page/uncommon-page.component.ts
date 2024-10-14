@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class UncommonPageComponent {
 
+  /** i18nSelect Pipe */
+  public name: string = 'Jhonny';
+  public gender: 'male' | 'female' = 'male';
+  public invitationMap = {
+    male: 'invitarlo',
+    female: 'invitarla'
+  }
+
+  changeClient() {
+    this.name = 'Melissa';
+    this.gender = 'female';
+  }
+
 }
