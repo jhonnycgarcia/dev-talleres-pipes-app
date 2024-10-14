@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, map } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -31,6 +32,17 @@ export class UncommonPageComponent {
     gender: 'male',
     address: 'Caracas, Venezuela'
   }
+
+  /** Async Pipe */
+  public myObservable = interval(2000).pipe(
+    map(() => Math.random()),
+  );
+
+  public promiseValue: Promise<string> = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Tenemos data en la promesa');
+    }, 3500);
+  });
 
   changeClient() {
     this.name = 'Melissa';
