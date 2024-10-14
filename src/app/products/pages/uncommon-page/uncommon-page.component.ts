@@ -24,6 +24,14 @@ export class UncommonPageComponent {
     'other': 'tenemos # clientes esperando en el evento'
   }
 
+  /** KeyValue Pipe */
+  public person = {
+    name: 'Jhonny',
+    age: 30,
+    gender: 'male',
+    address: 'Caracas, Venezuela'
+  }
+
   changeClient() {
     this.name = 'Melissa';
     this.gender = 'female';
