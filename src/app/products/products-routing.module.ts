@@ -10,7 +10,7 @@ const routes: Routes = [
     component: BasicsPageComponent
   },
   {
-    path: 'number',
+    path: 'numbers',
     component: NumbersPageComponent
   },
   {
