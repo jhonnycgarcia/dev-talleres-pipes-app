@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class OrdersComponent {
 
+  public isUpperCase: boolean = false;
+
+  toggleUpperCase(): void {
+    this.isUpperCase = !this.isUpperCase;
+  }
+
 }
