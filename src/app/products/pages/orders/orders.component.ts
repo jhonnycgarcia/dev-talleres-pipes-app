@@ -24,8 +24,14 @@ export class OrdersComponent {
     { name: 'Hawkeye', canFly: false, color: Color.blue },
   ];
 
+  public orderBy: keyof Hero | '' = '';
+
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;
+  }
+
+  changeOrderBy(value: keyof Hero): void {
+    this.orderBy = value;
   }
 
 }
