@@ -7,6 +7,7 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrdersComponent } from './pages/orders/orders.component';
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { OrdersComponent } from './pages/orders/orders.component';
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonPageComponent,
-    OrdersComponent
+    OrdersComponent,
+    ToggleCasePipe
   ],
   imports: [
     CommonModule,
